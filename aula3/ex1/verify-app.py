@@ -37,7 +37,7 @@ from eVotUM.Cripto import eccblind
 from eVotUM.Cripto import utils
 
 def printUsage():
-    print("Usage: python3 verifySignature-app.py -cert <signer certificate> -msg <original message to sign> -sDash <signature> -f <requester file> (NOTE: if the message has spaces surround it with \")")
+    print("Usage: python3 verify-app.py -cert <signer certificate> -msg <original message to sign> -sDash <signature> -f <requester file> (NOTE: if the message has spaces surround it with \")")
 
 def parseArgs():
     if (len(sys.argv) != 9):

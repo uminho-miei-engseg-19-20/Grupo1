@@ -37,7 +37,7 @@ from eVotUM.Cripto import eccblind
 
 
 def printUsage():
-    print("Usage: python3 unblindSignature-app.py -s <blind signature> -RDash <pRDashComponents> -> Outputs signature")
+    print("Usage: python3 desofusca-app.py -s <blind signature> -RDash <pRDashComponents> -> Outputs signature")
 
 def parseArgs():
     if (len(sys.argv) != 5):

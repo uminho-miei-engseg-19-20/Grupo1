@@ -37,7 +37,7 @@ import sys
 from eVotUM.Cripto import eccblind
 
 def printUsage():
-    print("Usage: python3 generateBlindSignature-app.py -key <private key> -bmsg <blind message> -> Outputs blind signature")
+    print("Usage: python3 blindSignature-app.py -key <private key> -bmsg <blind message> -> Outputs blind signature")
 
 def parseArgs():
     if (len(sys.argv) != 5):

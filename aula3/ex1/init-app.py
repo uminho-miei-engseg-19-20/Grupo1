@@ -35,7 +35,7 @@ import sys
 from eVotUM.Cripto import eccblind
 
 def printUsage():
-    print("Usage: python initSigner-app.py")
+    print('Usage: python3 init-app.py -> Outputs R\' value\npython3 init-app.py -init -> Initialize components and write in file')
 
 def parseArgs():
     if len(sys.argv == 1:
@@ -43,7 +43,7 @@ def parseArgs():
     elif len(sys.argv == 2): 
         main(1)
     else:
-        printUsage('python3 init-app.py -> Outputs R\' value\npython3 init-app.py -init -> Initialize components and write in file')
+        printUsage()
 
 
 def main(option):

@@ -37,7 +37,7 @@ from eVotUM.Cripto import eccblind
 
 
 def printUsage():
-    print("Usage: python3 generateBlindData-app.py -msg <message to sign> -RDash <pRDashComponents> -> Outupts blind message and writes blind components and pRComponents to file \'requester.txt\' (NOTE: if the message has spaces please surround it with \")")
+    print("Usage: python3 ofusca-app.py -msg <message to sign> -RDash <pRDashComponents> -> Outupts blind message and writes blind components and pRComponents to file \'requester.txt\' (NOTE: if the message has spaces please surround it with \")")
 
 def parseArgs():
     if (len(sys.argv) != 5):
