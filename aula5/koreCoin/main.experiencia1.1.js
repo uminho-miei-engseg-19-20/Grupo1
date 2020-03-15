@@ -22,7 +22,7 @@ class Blockchain{
     }
     
     createGenesisBlock(){
-        return new Block(0, "09/03/2018", "Bloco inicial da koreCoin", "0");
+        return new Block(0, "09/03/2020", "Bloco inicial da koreCoin", "0");
     }
     
     getlatestBlock(){
@@ -65,9 +65,17 @@ koreCoin.addBlock(new Block (3, "02/01/2018", {amount: 40}));
 console.log('Is Blockchain valid? ' + koreCoin.isChainValid());
 
 //tampering with blockchain
-koreCoin.chain[1].data = { amount: 100 };
-console.log("tampering with data...");
-koreCoin.chain[1].hash = koreCoin.chain[1].calculateHash();
+//koreCoin.chain[1].data = { amount: 100 };
+//console.log("tampering with data...");
+//koreCoin.chain[1].hash = koreCoin.chain[1].calculateHash();
+
+//console.log('Is Blockchain valid? ' + koreCoin.isChainValid());
+
+koreCoin.addBlock(new Block (4, "11/03/2020", {amount: 73577}));
+koreCoin.addBlock(new Block (5, "02/01/2018", {amount: 41101}));
+koreCoin.addBlock(new Block (6, "02/01/2018", {amount: 0.001}));
+
+console.log(JSON.stringify(koreCoin, null, 4));
 
 console.log('Is Blockchain valid? ' + koreCoin.isChainValid());
 
